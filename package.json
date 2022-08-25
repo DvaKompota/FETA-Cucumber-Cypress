@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DvaKompota/FETA-Cypress#readme",
   "dependencies": {
-    "cypress": "^10.6.0"
+    "cypress": "^10.6.0",
+    "prettier": "^2.7.1"
   }
 }
