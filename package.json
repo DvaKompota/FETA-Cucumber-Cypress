@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DvaKompota/FETA-Cypress/issues"
   },
-  "homepage": "https://github.com/DvaKompota/FETA-Cypress#readme"
+  "homepage": "https://github.com/DvaKompota/FETA-Cypress#readme",
+  "dependencies": {
+    "cypress": "^10.6.0"
+  }
 }
