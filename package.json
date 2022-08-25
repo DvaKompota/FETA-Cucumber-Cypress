@@ -1,0 +1,19 @@
+{
+  "name": "feta-cypress",
+  "version": "1.0.0",
+  "description": "Front End Test Automation Framework with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DvaKompota/FETA-Cypress.git"
+  },
+  "author": "Sergey Kolokolov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DvaKompota/FETA-Cypress/issues"
+  },
+  "homepage": "https://github.com/DvaKompota/FETA-Cypress#readme"
+}
