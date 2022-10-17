@@ -1,5 +1,4 @@
 export default class LeftNav {
-    private static readonly LEFT_NAV_TOGGLE = 'a.sidebar-toggle'
     private static readonly MENU_HEADING = 'li.menu-item'
     private static readonly MENU_ITEM = 'li.menu-item .menu-title'
     private static readonly LAYOUT = 'a[title="Layout"]'
@@ -20,10 +19,6 @@ export default class LeftNav {
     private static readonly AUTH = 'a[title="Auth"]'
     private static readonly AUTH_TITLE = this.AUTH + ' span.menu-title'
     private static readonly AUTH_ICON = this.AUTH + ' nb-icon.menu-icon'
-
-    public static verifyNavToggleVisible(): void {
-        cy.get(this.LEFT_NAV_TOGGLE).should('be.visible')
-    }
 
     public static verifyAllMenuTitlesVisible(): void {
         cy.contains(this.MENU_HEADING, 'FEATURES').should('be.visible')

@@ -1,4 +1,4 @@
-export default class LeftNav {
+export default class TopPanel {
     private static readonly LEFT_NAV_TOGGLE = 'a.sidebar-toggle'
     public static readonly LOGO = "a.logo"
 
