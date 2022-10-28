@@ -1,5 +1,4 @@
-
-Feature: Homepage validation
+Feature: Homepage resolution validation
 
     Scenario: Validate Home Page loads correctly in full HD resolution
         Given viewport is set to "1080p" resolution
