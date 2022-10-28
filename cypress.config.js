@@ -9,6 +9,9 @@ module.exports = defineConfig({
     excludeSpecPattern: "*.{js,ts}",
     specPattern: "**/*.feature",
     supportFile: false,
+    watchForFileChanges: false,
+    viewportHeight: 1080,
+    viewportWidth: 1920,
 
     setupNodeEvents(on, config) {
 
