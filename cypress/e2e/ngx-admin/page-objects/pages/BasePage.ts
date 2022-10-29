@@ -1,4 +1,5 @@
 export default class BasePage {
+    public static URL = "http://localhost:4200/"
 
     static pause(seconds: number) {
         cy.wait(seconds * 1000);
@@ -22,6 +23,14 @@ export default class BasePage {
 
     static setFullHDViewport() {
         cy.viewport(1920, 1080);
+    }
+
+    public static visitPage(): void {
+        cy.visit(this.URL);
+    }
+
+    public static validateURL(): void {
+        cy.url().should("contain", this.URL);
     }
 
 }

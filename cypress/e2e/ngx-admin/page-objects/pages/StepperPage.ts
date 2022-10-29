@@ -15,14 +15,6 @@ export default class StepperPage extends BasePage {
         stepLabel: () => { return cy.get(".label") },
     }
 
-    public static visitPage(): void {
-        cy.visit(this.URL);
-    }
-
-    public static validateURL(): void {
-        cy.url().should("contain", this.URL);
-    }
-
     public static validateStepperCardVisible(cardNo: number): void {
         this.elements.stepperCard(cardNo).should('be.visible');
     }
