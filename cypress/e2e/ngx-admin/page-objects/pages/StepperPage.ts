@@ -8,9 +8,9 @@ export default class StepperPage extends BasePage {
     public static readonly STEP_LABEL_TEXT4 = "Fourth step"
 
     public static elements = {
-        stepperCard: (cardNo: number) => { return cy.get("nb-card nb-card-body").eq(cardNo - 1 ) },
+        stepperCard: (cardNo: number) => { return cy.get("nb-card nb-card-body").eq(cardNo - 1) },
         stepperSteps: (cardNo: number) => { return this.elements.stepperCard(cardNo).find(".step") },
-        stepperStep: (cardNo: number, stepNo: number) => { return this.elements.stepperSteps(cardNo).eq(stepNo - 1 ) },
+        stepperStep: (cardNo: number, stepNo: number) => { return this.elements.stepperSteps(cardNo).eq(stepNo - 1) },
         stepIndex: () => { return cy.get(".label-index") },
         stepLabel: () => { return cy.get(".label") },
     }
