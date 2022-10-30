@@ -29,6 +29,12 @@ export default class StepperPage extends BasePage {
         buttonConfirm: (cardNo: number) => { return this.elements.stepperCard(cardNo).contains('button', 'Confirm') },
     }
 
+    public static stepperParams = {
+        1: {stepsCount: 4, prevButton: true, confirmButton: false},
+        2: {stepsCount: 3, prevButton: false, confirmButton: true},
+        3: {stepsCount: 4, prevButton: true, confirmButton: false},
+    }
+
     public static validateStepperCardVisible(cardNo: number): void {
         this.elements.stepperCard(cardNo).should('be.visible');
     }
@@ -61,6 +67,10 @@ export default class StepperPage extends BasePage {
             });
     }
 
+    public static clickStep(cardNo: number, stepNo: number): void {
+        this.elements.stepperStep(cardNo, stepNo).click();
+    }
+
     public static validateStepCheckmarkVisible(cardNo: number, stepNo: number): void {
         this.elements.stepperStep(cardNo, stepNo).find(this.locators.stepCheckmark).should('be.visible');
     }
@@ -87,7 +97,7 @@ export default class StepperPage extends BasePage {
             });
     }
 
-    public static validateStepLabelsVisible(cardNo: number): void {
+    public static validateAllStepLabelsVisible(cardNo: number): void {
         this.elements.stepperSteps(cardNo).each((step, index) => {
                 cy.wrap(step).contains(this.locators.stepLabel, this[`STEP_LABEL_TEXT${index + 1}`]);
             });
