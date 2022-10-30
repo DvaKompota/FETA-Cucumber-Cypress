@@ -18,22 +18,22 @@ Then(/^Layout Stepper Page cards are visible$/, () => {
 
 Then(/^Layout Stepper happy elements are visible$/, () => {
     StepperPage.validateStepperCardVisible(1)
-    StepperPage.validateStepsCount(1, 4)
     StepperPage.validateStepLabelsVisible(1)
+    StepperPage.validateStepIndicesVisible(1)
     StepperPage.validateContentHeadingVisible(1)
     StepperPage.validateContentHeadingText(1, 1)
     StepperPage.validatePrevButtonVisible(1)
     StepperPage.validateNextButtonVisible(1)
 
     StepperPage.validateStepperCardVisible(2)
-    StepperPage.validateStepsCount(2, 3)
     StepperPage.validateStepLabelsVisible(2)
+    StepperPage.validateStepIndicesVisible(2)
     StepperPage.validateContentTextVisible(2)
     StepperPage.validateNextButtonVisible(2)
 
     StepperPage.validateStepperCardVisible(3)
-    StepperPage.validateStepsCount(3, 4)
     StepperPage.validateStepLabelsVisible(3)
+    StepperPage.validateStepIndicesVisible(3)
     StepperPage.validateContentHeadingVisible(3)
     StepperPage.validateContentHeadingText(3, 1)
     StepperPage.validateContentTextVisible(3)

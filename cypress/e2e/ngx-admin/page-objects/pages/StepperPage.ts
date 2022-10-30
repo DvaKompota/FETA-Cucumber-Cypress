@@ -36,9 +36,15 @@ export default class StepperPage extends BasePage {
         this.elements.stepperSteps(cardNo).its('length').should('eq', stepsCount)
     }
 
+    public static validateStepIndicesVisible(cardNo: number): void {
+        this.elements.stepperSteps(cardNo).each((step, index) => {
+                cy.wrap(step).contains(this.locators.stepIndex, `${index + 1}`);
+            });
+    }
+
     public static validateStepLabelsVisible(cardNo: number): void {
         this.elements.stepperSteps(cardNo).each((step, index) => {
-                cy.wrap(step).contains(this[`STEP_LABEL_TEXT${index + 1}`]);
+                cy.wrap(step).contains(this.locators.stepLabel, this[`STEP_LABEL_TEXT${index + 1}`]);
             });
     }
 
