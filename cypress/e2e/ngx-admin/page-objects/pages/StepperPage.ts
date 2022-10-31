@@ -32,9 +32,9 @@ export default class StepperPage extends BasePage {
     }
 
     public static stepperParams = {
-        1: {steps: 4, heading: true, text: false, prev: true},
-        2: {steps: 3, heading: false, text: true, prev: false, t1: 'consectetuer', t2: 'Maurizzle', t3: 'shackalack'},
-        3: {steps: 4, heading: true, text: true, prev: true, t1: 'elit', t2: 'lacinia', t3: 'ligula', t4: 'lectus'},
+        1: { steps: 4, heading: true, text: false, input: false, prev: true },
+        2: { steps: 3, heading: false, text: true, firstStepText: 'consectetuer', input: true, prev: false },
+        3: { steps: 4, heading: true, text: true, firstStepText: 'elit', input: false, prev: true },
     }
 
     public static validateStepperCardVisible(cardNo: number): void {

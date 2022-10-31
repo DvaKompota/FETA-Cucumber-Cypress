@@ -57,11 +57,11 @@ Given(/^Layout Stepper card "(.*)" is in the initial state$/, (cardNo: string) =
     }
     if (StepperPage.stepperParams[cardNo].text) {
         StepperPage.validateContentTextVisible(Number(cardNo));
-        StepperPage.validateContentTextCorrect(Number(cardNo), StepperPage.stepperParams[cardNo].t1);
+        StepperPage.validateContentTextCorrect(Number(cardNo), StepperPage.stepperParams[cardNo].firstStepText);
     } else {
         StepperPage.validateContentTextNotVisible(Number(cardNo))
     }
-    if (StepperPage.stepperParams[cardNo].text) {
+    if (StepperPage.stepperParams[cardNo].input) {
         StepperPage.validateInputFieldVisible(Number(cardNo));
         StepperPage.validateInputFieldValueIs(Number(cardNo), "");
     } else {
@@ -165,7 +165,7 @@ Then(/^Layout Stepper card "(.*)" content text is "(visible|not visible)"$/,
     }
 );
 
-Then(/^Layout Stepper card "(.*)" has "(.*)" content text$/, (cardNo: string, text: string) => {
+Then(/^Layout Stepper card "(.*)" has "(.*)" in content text$/, (cardNo: string, text: string) => {
     StepperPage.validateContentTextCorrect(Number(cardNo), text);
 });
 

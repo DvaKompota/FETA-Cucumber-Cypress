@@ -19,6 +19,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" step "3" checkmark is "not visible"
         Then Layout Stepper card "1" step "4" checkmark is "not visible"
         Then Layout Stepper card "1" has "Step content #2" heading
+        Then Layout Stepper card "1" content text is "not visible"
         Then Layout Stepper card "1" Prev button is "enabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
@@ -32,6 +33,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" step "3" checkmark is "not visible"
         Then Layout Stepper card "1" step "4" checkmark is "not visible"
         Then Layout Stepper card "1" has "Step content #3" heading
+        Then Layout Stepper card "1" content text is "not visible"
         Then Layout Stepper card "1" Prev button is "enabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
@@ -45,6 +47,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" step "3" checkmark is "visible"
         Then Layout Stepper card "1" step "4" checkmark is "not visible"
         Then Layout Stepper card "1" has "Step content #4" heading
+        Then Layout Stepper card "1" content text is "not visible"
         Then Layout Stepper card "1" Prev button is "enabled"
         Then Layout Stepper card "1" Next button is "disabled"
 
@@ -58,6 +61,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" step "3" checkmark is "not visible"
         Then Layout Stepper card "1" step "4" checkmark is "visible"
         Then Layout Stepper card "1" has "Step content #3" heading
+        Then Layout Stepper card "1" content text is "not visible"
         Then Layout Stepper card "1" Prev button is "enabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
@@ -71,6 +75,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" step "3" checkmark is "visible"
         Then Layout Stepper card "1" step "4" checkmark is "visible"
         Then Layout Stepper card "1" has "Step content #2" heading
+        Then Layout Stepper card "1" content text is "not visible"
         Then Layout Stepper card "1" Prev button is "enabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
@@ -84,6 +89,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" step "3" checkmark is "visible"
         Then Layout Stepper card "1" step "4" checkmark is "visible"
         Then Layout Stepper card "1" has "Step content #1" heading
+        Then Layout Stepper card "1" content text is "not visible"
         Then Layout Stepper card "1" Prev button is "disabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
@@ -207,7 +213,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "Maurizzle" content text
+        Then Layout Stepper card "2" has "Maurizzle" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
@@ -220,7 +226,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "Maurizzle" content text
+        Then Layout Stepper card "2" has "Maurizzle" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
@@ -233,7 +239,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "consectetuer" content text
+        Then Layout Stepper card "2" has "consectetuer" in content text
         Then Layout Stepper card "2" input field value is user "name"
         Then Layout Stepper card "2" Next button is "enabled"
 
@@ -245,7 +251,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "Maurizzle" content text
+        Then Layout Stepper card "2" has "Maurizzle" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
@@ -260,7 +266,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "shackalack" content text
+        Then Layout Stepper card "2" has "shackalack" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Confirm button is "enabled"
@@ -273,7 +279,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "shackalack" content text
+        Then Layout Stepper card "2" has "shackalack" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Confirm button is "enabled"
@@ -286,7 +292,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "Maurizzle" content text
+        Then Layout Stepper card "2" has "Maurizzle" in content text
         Then Layout Stepper card "2" input field value is user "movie"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
@@ -299,7 +305,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "shackalack" content text
+        Then Layout Stepper card "2" has "shackalack" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Confirm button is "enabled"
@@ -343,7 +349,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "Maurizzle" content text
+        Then Layout Stepper card "2" has "Maurizzle" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
@@ -356,7 +362,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "Maurizzle" content text
+        Then Layout Stepper card "2" has "Maurizzle" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
@@ -369,7 +375,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "Maurizzle" content text
+        Then Layout Stepper card "2" has "Maurizzle" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
@@ -382,7 +388,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "consectetuer" content text
+        Then Layout Stepper card "2" has "consectetuer" in content text
         Then Layout Stepper card "2" input field value is user "name"
         Then Layout Stepper card "2" Next button is "enabled"
 
@@ -394,7 +400,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "consectetuer" content text
+        Then Layout Stepper card "2" has "consectetuer" in content text
         Then Layout Stepper card "2" input field value is user "name"
         Then Layout Stepper card "2" Next button is "enabled"
 
@@ -406,7 +412,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "not visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "Maurizzle" content text
+        Then Layout Stepper card "2" has "Maurizzle" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
@@ -421,7 +427,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "shackalack" content text
+        Then Layout Stepper card "2" has "shackalack" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Confirm button is "enabled"
@@ -434,7 +440,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "consectetuer" content text
+        Then Layout Stepper card "2" has "consectetuer" in content text
         Then Layout Stepper card "2" input field value is user "name"
         Then Layout Stepper card "2" Next button is "enabled"
 
@@ -446,7 +452,95 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" step "2" checkmark is "visible"
         Then Layout Stepper card "2" step "3" checkmark is "not visible"
         Then Layout Stepper card "2" content heading is "not visible"
-        Then Layout Stepper card "2" has "shackalack" content text
+        Then Layout Stepper card "2" has "shackalack" in content text
         Then Layout Stepper card "2" input field value is "empty"
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Confirm button is "enabled"
+
+    Scenario: Validate right stepper buttons
+        Given user navigates to the Layout Stepper Page
+        And Layout Stepper card "3" is in the initial state
+
+        When user clicks Layout Stepper card "3" Next button
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "visible"
+        Then Layout Stepper card "3" step "3" index is "visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "not visible"
+        Then Layout Stepper card "3" step "3" checkmark is "not visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #2" heading
+        Then Layout Stepper card "3" has "lacinia" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" Next button
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "not visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #3" heading
+        Then Layout Stepper card "3" has "ligula" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" Next button
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "not visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #4" heading
+        Then Layout Stepper card "3" has "lectus" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
+        Then Layout Stepper card "3" Next button is "disabled"
+
+        When user clicks Layout Stepper card "3" Prev button
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "visible"
+        Then Layout Stepper card "3" step "4" index is "not visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "not visible"
+        Then Layout Stepper card "3" step "4" checkmark is "visible"
+        Then Layout Stepper card "3" has "Step content #3" heading
+        Then Layout Stepper card "3" has "ligula" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" Prev button
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "visible"
+        Then Layout Stepper card "3" step "3" index is "not visible"
+        Then Layout Stepper card "3" step "4" index is "not visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "not visible"
+        Then Layout Stepper card "3" step "3" checkmark is "visible"
+        Then Layout Stepper card "3" step "4" checkmark is "visible"
+        Then Layout Stepper card "3" has "Step content #2" heading
+        Then Layout Stepper card "3" has "lacinia" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" Prev button
+        Then Layout Stepper card "3" step "1" index is "visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "not visible"
+        Then Layout Stepper card "3" step "4" index is "not visible"
+        Then Layout Stepper card "3" step "1" checkmark is "not visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "visible"
+        Then Layout Stepper card "3" step "4" checkmark is "visible"
+        Then Layout Stepper card "3" has "Step content #1" heading
+        Then Layout Stepper card "3" has "elit" in content text
+        Then Layout Stepper card "3" Prev button is "disabled"
+        Then Layout Stepper card "3" Next button is "enabled"
