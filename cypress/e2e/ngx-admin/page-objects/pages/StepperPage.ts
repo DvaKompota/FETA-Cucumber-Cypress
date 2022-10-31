@@ -10,13 +10,14 @@ export default class StepperPage extends BasePage {
     public static readonly STEP_HEADING3 = "Step content #3"
     public static readonly STEP_LABEL_TEXT4 = "Fourth step"
     public static readonly STEP_HEADING4 = "Step content #4"
+    public static readonly WIZARD_HEADING = "Wizard completed!"
 
     public static locators = {
         stepIndex: ".label-index span",
         stepCheckmark: ".label-index nb-icon",
         stepLabel: ".label",
-        stepContentHeading: "h3.ng-star-inserted",
-        stepContentText: "p.lorem",
+        stepContentHeading: ".step-content h3",
+        stepContentText: ".step-content p.lorem",
         stepInput: "div input",
     }
 
@@ -27,12 +28,13 @@ export default class StepperPage extends BasePage {
         buttonPrev: (cardNo: number) => { return this.elements.stepperCard(cardNo).contains('button', 'prev') },
         buttonNext: (cardNo: number) => { return this.elements.stepperCard(cardNo).contains('button', 'next') },
         buttonConfirm: (cardNo: number) => { return this.elements.stepperCard(cardNo).contains('button', 'Confirm') },
+        buttonAgain: (cardNo: number) => { return this.elements.stepperCard(cardNo).contains('button', 'Try again') },
     }
 
     public static stepperParams = {
-        1: {stepsCount: 4, prevButton: true, confirmButton: false},
-        2: {stepsCount: 3, prevButton: false, confirmButton: true},
-        3: {stepsCount: 4, prevButton: true, confirmButton: false},
+        1: {steps: 4, heading: true, text: false, prev: true},
+        2: {steps: 3, heading: false, text: true, prev: false, t1: 'consectetuer', t2: 'Maurizzle', t3: 'shackalack'},
+        3: {steps: 4, heading: true, text: true, prev: true, t1: 'elit', t2: 'lacinia', t3: 'ligula', t4: 'lectus'},
     }
 
     public static validateStepperCardVisible(cardNo: number): void {
@@ -107,6 +109,12 @@ export default class StepperPage extends BasePage {
         this.elements.stepperCard(cardNo).find(this.locators.stepContentHeading).should('be.visible');
     }
 
+    public static validateContentHeadingNotVisible(cardNo: number): void {
+        this.elements.stepperCard(cardNo)
+            .find(this.locators.stepContentHeading)
+            .should('not.exist');
+    }
+
     public static validateContentHeadingText(cardNo: number, heading: string): void {
         this.elements.stepperCard(cardNo)
             .find(this.locators.stepContentHeading)
@@ -115,6 +123,36 @@ export default class StepperPage extends BasePage {
 
     public static validateContentTextVisible(cardNo: number): void {
         this.elements.stepperCard(cardNo).find(this.locators.stepContentText).should('be.visible');
+    }
+
+    public static validateContentTextNotVisible(cardNo: number): void {
+        this.elements.stepperCard(cardNo)
+            .find(this.locators.stepContentText)
+            .should('not.exist');
+    }
+
+    public static validateContentTextCorrect(cardNo: number, text: string): void {
+        this.elements.stepperCard(cardNo).find(this.locators.stepContentText).contains(text);
+    }
+
+    public static validateInputFieldVisible(cardNo: number): void {
+        this.elements.stepperCard(cardNo).find(this.locators.stepInput).should('be.visible');
+    }
+
+    public static validateInputFieldNotVisible(cardNo: number): void {
+        this.elements.stepperCard(cardNo)
+        .find(this.locators.stepInput)
+        .should('not.exist');
+}
+
+    public static validateInputFieldValueIs(cardNo: number, text: string): void {
+        this.elements.stepperCard(cardNo)
+            .find(this.locators.stepInput)
+            .should('have.value', text);
+    }
+
+    public static fillInputField(cardNo: number, text: string): void {
+        this.elements.stepperCard(cardNo).find(this.locators.stepInput).type(text);
     }
 
     public static validatePrevButtonVisible(cardNo: number): void {
@@ -163,6 +201,22 @@ export default class StepperPage extends BasePage {
 
     public static clickConfirmButton(cardNo: number): void {
         this.elements.buttonConfirm(cardNo).click();
+    }
+
+    public static validateTryAgainButtonVisible(cardNo: number): void {
+        this.elements.buttonAgain(cardNo).should('be.visible');
+    }
+
+    public static validateTryAgainButtonEnabled(cardNo: number): void {
+        this.elements.buttonAgain(cardNo).should('be.enabled');
+    }
+
+    public static validateTryAgainButtonDisabled(cardNo: number): void {
+        this.elements.buttonAgain(cardNo).should('be.disabled');
+    }
+
+    public static clickTryAgainButton(cardNo: number): void {
+        this.elements.buttonAgain(cardNo).click();
     }
 
 }
