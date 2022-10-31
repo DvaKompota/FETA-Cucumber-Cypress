@@ -108,7 +108,7 @@ Then(/^Layout Stepper card "(.*)" all step indices are "(visible|not visible)"$/
 );
 
 
-When(/^user clicks Layout Stepper Card "(.*)" step "(.*)" index$/, 
+When(/^user clicks Layout Stepper card "(.*)" step "(.*)" index$/, 
     (cardNo: string, stepNo: number) => {
         StepperPage.clickStep(Number(cardNo), Number(stepNo));
 });

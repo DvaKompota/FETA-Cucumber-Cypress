@@ -97,14 +97,14 @@ Feature: Layout Stepper validation
         Given user navigates to the Layout Stepper Page
         And Layout Stepper card "1" is in the initial state
 
-        When user clicks Layout Stepper Card "1" step "1" index
+        When user clicks Layout Stepper card "1" step "1" index
         Then Layout Stepper card "1" is in the initial state
-        When user clicks Layout Stepper Card "1" step "3" index
+        When user clicks Layout Stepper card "1" step "3" index
         Then Layout Stepper card "1" is in the initial state
-        When user clicks Layout Stepper Card "1" step "4" index
+        When user clicks Layout Stepper card "1" step "4" index
         Then Layout Stepper card "1" is in the initial state
 
-        When user clicks Layout Stepper Card "1" step "2" index
+        When user clicks Layout Stepper card "1" step "2" index
         Then Layout Stepper card "1" step "1" index is "not visible"
         Then Layout Stepper card "1" step "2" index is "visible"
         Then Layout Stepper card "1" step "3" index is "visible"
@@ -117,7 +117,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" Prev button is "enabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "1" step "1" index
+        When user clicks Layout Stepper card "1" step "1" index
         Then Layout Stepper card "1" step "1" index is "visible"
         Then Layout Stepper card "1" step "2" index is "not visible"
         Then Layout Stepper card "1" step "3" index is "visible"
@@ -130,7 +130,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" Prev button is "disabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "1" step "4" index
+        When user clicks Layout Stepper card "1" step "4" index
         Then Layout Stepper card "1" step "1" index is "visible"
         Then Layout Stepper card "1" step "2" index is "not visible"
         Then Layout Stepper card "1" step "3" index is "visible"
@@ -143,7 +143,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" Prev button is "disabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "1" step "3" index
+        When user clicks Layout Stepper card "1" step "3" index
         Then Layout Stepper card "1" step "1" index is "not visible"
         Then Layout Stepper card "1" step "2" index is "not visible"
         Then Layout Stepper card "1" step "3" index is "visible"
@@ -156,7 +156,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" Prev button is "enabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "1" step "1" index
+        When user clicks Layout Stepper card "1" step "1" index
         Then Layout Stepper card "1" step "1" index is "visible"
         Then Layout Stepper card "1" step "2" index is "not visible"
         Then Layout Stepper card "1" step "3" index is "not visible"
@@ -169,7 +169,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" Prev button is "disabled"
         Then Layout Stepper card "1" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "1" step "4" index
+        When user clicks Layout Stepper card "1" step "4" index
         Then Layout Stepper card "1" step "1" index is "not visible"
         Then Layout Stepper card "1" step "2" index is "not visible"
         Then Layout Stepper card "1" step "3" index is "not visible"
@@ -182,7 +182,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "1" Prev button is "enabled"
         Then Layout Stepper card "1" Next button is "disabled"
 
-        When user clicks Layout Stepper Card "1" step "2" index
+        When user clicks Layout Stepper card "1" step "2" index
         Then Layout Stepper card "1" step "1" index is "not visible"
         Then Layout Stepper card "1" step "2" index is "visible"
         Then Layout Stepper card "1" step "3" index is "not visible"
@@ -332,16 +332,16 @@ Feature: Layout Stepper validation
         And Layout Stepper card "2" is in the initial state
         And user data for "Arthur" is loaded
 
-        When user clicks Layout Stepper Card "2" step "1" index
+        When user clicks Layout Stepper card "2" step "1" index
         Then Layout Stepper card "2" is in the initial state
-        When user clicks Layout Stepper Card "2" step "2" index
+        When user clicks Layout Stepper card "2" step "2" index
         Then Layout Stepper card "2" is in the initial state
-        When user clicks Layout Stepper Card "2" step "3" index
+        When user clicks Layout Stepper card "2" step "3" index
         Then Layout Stepper card "2" is in the initial state
 
         When user fills Layout Stepper card "2" input with user "name"
         Then Layout Stepper card "2" input field value is user "name"
-        When user clicks Layout Stepper Card "2" step "2" index
+        When user clicks Layout Stepper card "2" step "2" index
         Then Layout Stepper card "2" step "1" index is "not visible"
         Then Layout Stepper card "2" step "2" index is "visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -354,7 +354,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "2" step "2" index
+        When user clicks Layout Stepper card "2" step "2" index
         Then Layout Stepper card "2" step "1" index is "not visible"
         Then Layout Stepper card "2" step "2" index is "visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -367,7 +367,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "2" step "3" index
+        When user clicks Layout Stepper card "2" step "3" index
         Then Layout Stepper card "2" step "1" index is "not visible"
         Then Layout Stepper card "2" step "2" index is "visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -380,7 +380,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "2" step "1" index
+        When user clicks Layout Stepper card "2" step "1" index
         Then Layout Stepper card "2" step "1" index is "visible"
         Then Layout Stepper card "2" step "2" index is "visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -392,7 +392,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" input field value is user "name"
         Then Layout Stepper card "2" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "2" step "3" index
+        When user clicks Layout Stepper card "2" step "3" index
         Then Layout Stepper card "2" step "1" index is "visible"
         Then Layout Stepper card "2" step "2" index is "visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -404,7 +404,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" input field value is user "name"
         Then Layout Stepper card "2" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "2" step "2" index
+        When user clicks Layout Stepper card "2" step "2" index
         Then Layout Stepper card "2" step "1" index is "not visible"
         Then Layout Stepper card "2" step "2" index is "visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -419,7 +419,7 @@ Feature: Layout Stepper validation
 
         When user fills Layout Stepper card "2" input with user "movie"
         Then Layout Stepper card "2" input field value is user "movie"
-        When user clicks Layout Stepper Card "2" step "3" index
+        When user clicks Layout Stepper card "2" step "3" index
         Then Layout Stepper card "2" step "1" index is "not visible"
         Then Layout Stepper card "2" step "2" index is "not visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -432,7 +432,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" Prev button is "enabled"
         Then Layout Stepper card "2" Confirm button is "enabled"
 
-        When user clicks Layout Stepper Card "2" step "1" index
+        When user clicks Layout Stepper card "2" step "1" index
         Then Layout Stepper card "2" step "1" index is "visible"
         Then Layout Stepper card "2" step "2" index is "not visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -444,7 +444,7 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "2" input field value is user "name"
         Then Layout Stepper card "2" Next button is "enabled"
 
-        When user clicks Layout Stepper Card "2" step "3" index
+        When user clicks Layout Stepper card "2" step "3" index
         Then Layout Stepper card "2" step "1" index is "not visible"
         Then Layout Stepper card "2" step "2" index is "not visible"
         Then Layout Stepper card "2" step "3" index is "visible"
@@ -543,4 +543,113 @@ Feature: Layout Stepper validation
         Then Layout Stepper card "3" has "Step content #1" heading
         Then Layout Stepper card "3" has "elit" in content text
         Then Layout Stepper card "3" Prev button is "disabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+    Scenario: Validate right stepper step icons
+        Given user navigates to the Layout Stepper Page
+        And Layout Stepper card "3" is in the initial state
+
+        When user clicks Layout Stepper card "3" step "1" index
+        Then Layout Stepper card "3" is in the initial state
+        When user clicks Layout Stepper card "3" step "3" index
+        Then Layout Stepper card "3" is in the initial state
+        When user clicks Layout Stepper card "3" step "4" index
+        Then Layout Stepper card "3" is in the initial state
+
+        When user clicks Layout Stepper card "3" step "2" index
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "visible"
+        Then Layout Stepper card "3" step "3" index is "visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "not visible"
+        Then Layout Stepper card "3" step "3" checkmark is "not visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #2" heading
+        Then Layout Stepper card "3" has "lacinia" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" step "1" index
+        Then Layout Stepper card "3" step "1" index is "visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "not visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "not visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #1" heading
+        Then Layout Stepper card "3" has "elit" in content text
+        Then Layout Stepper card "3" Prev button is "disabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" step "4" index
+        Then Layout Stepper card "3" step "1" index is "visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "not visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "not visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #1" heading
+        Then Layout Stepper card "3" has "elit" in content text
+        Then Layout Stepper card "3" Prev button is "disabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" step "3" index
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "not visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #3" heading
+        Then Layout Stepper card "3" has "ligula" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" step "1" index
+        Then Layout Stepper card "3" step "1" index is "visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "not visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "not visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #1" heading
+        Then Layout Stepper card "3" has "elit" in content text
+        Then Layout Stepper card "3" Prev button is "disabled"
+        Then Layout Stepper card "3" Next button is "enabled"
+
+        When user clicks Layout Stepper card "3" step "4" index
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "not visible"
+        Then Layout Stepper card "3" step "3" index is "not visible"
+        Then Layout Stepper card "3" step "4" index is "visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "visible"
+        Then Layout Stepper card "3" step "3" checkmark is "visible"
+        Then Layout Stepper card "3" step "4" checkmark is "not visible"
+        Then Layout Stepper card "3" has "Step content #4" heading
+        Then Layout Stepper card "3" has "lectus" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
+        Then Layout Stepper card "3" Next button is "disabled"
+
+        When user clicks Layout Stepper card "3" step "2" index
+        Then Layout Stepper card "3" step "1" index is "not visible"
+        Then Layout Stepper card "3" step "2" index is "visible"
+        Then Layout Stepper card "3" step "3" index is "not visible"
+        Then Layout Stepper card "3" step "4" index is "not visible"
+        Then Layout Stepper card "3" step "1" checkmark is "visible"
+        Then Layout Stepper card "3" step "2" checkmark is "not visible"
+        Then Layout Stepper card "3" step "3" checkmark is "visible"
+        Then Layout Stepper card "3" step "4" checkmark is "visible"
+        Then Layout Stepper card "3" has "Step content #2" heading
+        Then Layout Stepper card "3" has "lacinia" in content text
+        Then Layout Stepper card "3" Prev button is "enabled"
         Then Layout Stepper card "3" Next button is "enabled"
